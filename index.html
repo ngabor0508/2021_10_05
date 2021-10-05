@@ -15,8 +15,7 @@
 </head>
 
 <body>
-    <div>
-        <form action="">
+    <div class="kozepre">
             </br><label for="nev">Név: </label>
             <input type="text" id="nev" name="nev"></br></br>
 
@@ -26,11 +25,12 @@
             <label for="kiadasiEv">Kiadási év: </label>
             <input type="date" id="kiadasiEv" name="kiadasiEv"></br></br>
 
-            <button onclick="myFunction()" type="submit" id="hozzaAd" name="hozzaAd">Hozzáad</button>
-            <button onclick="myFunction()" type="submit" id="listazas" name="listazas">Listázás</button>
-        </form>
-
+            <button onclick="hozzaAdGomb()" id="hozzaAd">Hozzáad</button>
+            <button onclick="listazasGomb()" id="listazas">Listázás</button>
     </div>
+
+    <table id="tablazat_id">
+    </table>
 </body>
 
 </html>
